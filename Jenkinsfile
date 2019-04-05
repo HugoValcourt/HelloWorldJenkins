@@ -7,8 +7,8 @@ pipeline {
             agent { label 'master'}
             steps {
 		    sh "ls -al"
-	            javac HelloWorld.java
-	            java HelloWorld
+	            sh "javac HelloWorld.java"
+	            sh "java HelloWorld"
             }
         }
     }
