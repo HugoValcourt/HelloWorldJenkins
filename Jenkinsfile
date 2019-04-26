@@ -3,7 +3,7 @@ pipeline {
     agent none
     stages {
 
-        stage('TEST MASTER'){
+        stage('RUN MASTER'){
             agent { label 'master'}
             steps {
 		    sh "echo TEST"
