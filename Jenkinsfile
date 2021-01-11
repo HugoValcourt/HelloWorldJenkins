@@ -6,7 +6,7 @@ pipeline {
   }
     stages {
      when {
-        expression { params.BUILD }
+        expression { params.BUILD == true}
       }
         stage('RUN MASTER'){
             agent { label 'master'}
